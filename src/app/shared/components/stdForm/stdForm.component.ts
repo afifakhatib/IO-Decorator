@@ -9,7 +9,7 @@ import { Istds } from "../../models/stdData.interface";
 @Component({
     selector : 'app-stdForm',
     templateUrl : './stdForm.component.html',
-    styleUrls : ['./stdform.component.scss']
+    styleUrls : ['./stdForm.component.scss']
 })
 export class StdFormComponent implements OnInit{
 
