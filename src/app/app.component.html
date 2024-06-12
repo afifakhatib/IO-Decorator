@@ -1,0 +1,40 @@
+
+
+<div class="container mt-4 mb-4">
+    <div class="row">
+        <div class="col-md-12">
+            <app-parent></app-parent>
+        </div>
+    </div>
+</div>
+
+
+<h2 class="alert alert-danger">Todo task by @Input() and @Output() decorator</h2>
+
+<div class="container mt-4 mb-4">
+    <div class="row">
+        <div class="col-md-6">
+        <app-todo-form
+        (emmitTodoData)="onTodoEmmit($event)">
+        </app-todo-form>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+           <app-todo-list [gettodoArray]="todoArray"></app-todo-list>
+        </div>
+    </div>
+</div>
+
+<h2 class="alert alert-danger">Student task by @Input() and @Output() decorator</h2>
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-5">
+          <app-stdForm
+          (emmitstdData)="onStdEmmit($event)"></app-stdForm>
+        </div>
+        <div class="col-md-7 mt-4 mt-md-0">
+           <app-stdTable [getStdArray]="stdArray"></app-stdTable>
+        </div>
+    </div>
+</div>
